@@ -28,7 +28,9 @@
             "warn",
             "all",
             {
-                "ignoreJSX": "all"
+                "ignoreJSX": "all",
+                "nestedBinaryExpressions": false,
+                "enforceForArrowConditionals": false
             }
         ],
         "@stylistic/ts/no-extra-semi": "warn",
