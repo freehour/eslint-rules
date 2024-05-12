@@ -37,7 +37,7 @@
          */
 
         "import-x/default": "error",
-        "import-x/named": "error",
+        // "import-x/named": "error",
         "import-x/namespace": "error",
         "import-x/no-absolute-path": "error",
         "import-x/no-cycle": "error",
@@ -47,7 +47,7 @@
         // "import-x/no-relative-parent-imports": "warn",
         // "import-x/no-restricted-paths": "warn",
         "import-x/no-self-import": "warn",
-        "import-x/no-unresolved": "error",
+        // "import-x/no-unresolved": "error",
         "import-x/no-useless-path-segments": "warn",
         "import-x/no-webpack-loader-syntax": "error",
 
