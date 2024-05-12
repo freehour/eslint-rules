@@ -1,0 +1,19 @@
+{
+    "rules": {
+
+        /**
+         * @description: enforce the Rules of Hooks
+         * @see https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks
+         */
+
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+
+
+        /**
+         * last
+         * @description: dummy rule, to avoid dealing with trailing commas above
+         */
+         "": "off"
+    }
+}

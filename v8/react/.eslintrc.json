@@ -1,0 +1,186 @@
+{
+    "rules": {
+        /**
+         * @description: eslint rules for react
+         * @see https://github.com/jsx-eslint/eslint-plugin-react?tab=readme-ov-file#list-of-supported-rules
+         * @version 7.34.1
+         */
+
+        // "react/boolean-prop-naming": "warn",
+        "react/button-has-type": "warn",
+        "react/checked-requires-onchange-or-readonly": "warn",
+        // "react/default-props-match-prop-types": "warn",
+        // "react/destructuring-assignment": "warn",
+        "react/display-name": "warn",
+        // "react/forbid-component-props": "warn",
+        // "react/forbid-dom-props": "warn",
+        // "react/forbid-elements": "warn",
+        // "react/forbid-foreign-prop-types": "warn",
+        // "react/forbid-prop-types": "warn",
+        "react/function-component-definition": [
+            "warn",
+            {
+                "namedComponents": "arrow-function"
+            }
+        ],
+        "react/hook-use-state": "warn",
+        "react/iframe-missing-sandbox": "warn",
+        "react/jsx-boolean-value": "warn",
+        "react/jsx-child-element-spacing": "warn",
+        "react/jsx-closing-bracket-location": "warn",
+        "react/jsx-closing-tag-location": "warn",
+        "react/jsx-curly-brace-presence": [
+            "warn",
+            {
+                "props": "never",
+                "children": "never",
+                "propElementValues": "always"
+            }
+        ],
+        "react/jsx-curly-newline": "warn",
+        "react/jsx-curly-spacing": "warn",
+        "react/jsx-equals-spacing": "warn",
+        "react/jsx-filename-extension": [
+            "warn",
+            {
+                "extensions": [
+                    ".tsx"
+                ]
+            }
+        ],
+        "react/jsx-first-prop-new-line": [
+            "warn",
+            "multiline"
+        ],
+        "react/jsx-fragments": "warn",
+        // "react/jsx-handler-names": "warn",
+        "react/jsx-indent-props": "warn",
+        "react/jsx-indent": [
+            "warn",
+            4,
+            {
+                "indentLogicalExpressions": true
+            }
+        ],
+        "react/jsx-key": "warn",
+        // "react/jsx-max-depth": "warn",
+        "react/jsx-max-props-per-line": [
+            "warn",
+            {
+                "maximum": 1,
+                "when": "multiline"
+            }
+        ],
+        "react/jsx-newline": [
+            "warn",
+            {
+                "prevent": true
+            }
+        ],
+        "react/jsx-no-bind": [
+            "warn",
+            {
+                "ignoreDOMComponents": true,
+                "ignoreRefs": true
+            }
+        ],
+        "react/jsx-no-comment-textnodes": "warn",
+        "react/jsx-no-constructed-context-values": "warn",
+        "react/jsx-no-duplicate-props": "warn",
+        // "react/jsx-no-leaked-render": "warn",
+        // "react/jsx-no-literals": "warn", // <---- is {"string"} fixed?
+        "react/jsx-no-script-url": "warn",
+        "react/jsx-no-target-blank": "error",
+        "react/jsx-no-undef": "warn",
+        "react/jsx-no-useless-fragment": "warn",
+        "react/jsx-one-expression-per-line": [
+            "warn",
+            {
+                "allow": "single-child"
+            }
+        ],
+        // "react/jsx-pascal-case": "warn",
+        "react/jsx-props-no-multi-spaces": "warn",
+        // "react/jsx-props-no-spreading": "warn",
+        // "react/jsx-sort-props": "warn",
+        "react/jsx-tag-spacing": "warn", // <---- check if defaults are good
+        // "react/jsx-uses-react": "warn",
+        "react/jsx-uses-vars": "warn",
+        "react/jsx-wrap-multilines": [
+            "warn",
+            {
+                "declaration": "parens-new-line",
+                "assignment": "parens-new-line",
+                "return": "parens-new-line",
+                "arrow": "parens-new-line",
+                "condition": "parens-new-line",
+                "logical": "parens-new-line",
+                "prop": "parens-new-line"
+            }
+        ],
+        // "react/no-access-state-in-setstate": "warn",
+        // "react/no-adjacent-inline-elements": "warn",
+        "react/no-array-index-key": "warn",
+        // "react/no-arrow-function-lifecycle": "warn",
+        "react/no-children-prop": "warn",
+        "react/no-danger-with-children": "warn",
+        // "react/no-danger": "warn",
+        "react/no-deprecated": "warn",
+        // "react/no-did-mount-set-state": "warn",
+        // "react/no-did-update-set-state": "warn",
+        // "react/no-direct-mutation-state": "warn",
+        "react/no-find-dom-node": "warn",
+        "react/no-invalid-html-attribute": "warn",
+        // "react/no-is-mounted": "warn",
+        // "react/no-multi-comp": "warn",
+        "react/no-namespace": "warn",
+        // "react/no-object-type-as-default-prop": "warn",
+        // "react/no-redundant-should-component-update": "warn",
+        "react/no-render-return-value": "warn",
+        // "react/no-set-state": "warn",
+        "react/no-string-refs": "warn",
+        "react/no-this-in-sfc": "warn",
+        // "react/no-typos": "warn",
+        "react/no-unescaped-entities": "warn",
+        "react/no-unknown-property": "warn",
+        // "react/no-unsafe": "warn",
+        "react/no-unstable-nested-components": "warn",
+        // "react/no-unused-class-component-methods": "warn",
+        // "react/no-unused-prop-types": "warn",
+        // "react/no-unused-state": "warn",
+        // "react/no-will-update-set-state": "warn",
+        // "react/prefer-es6-class": "warn",
+        // "react/prefer-exact-props": "warn",
+        // "react/prefer-read-only-props": "warn", // <---- best practice?
+        "react/prefer-stateless-function": "error",
+        "react/prop-types": "warn",
+        // "react/react-in-jsx-scope": "warn",
+        // "react/require-default-props": "warn",
+        // "react/require-optimization": "warn",
+        // "react/require-render-return": "warn",
+        "react/self-closing-comp": "warn",
+        // "react/sort-comp": "warn",
+        // "react/sort-default-props": "warn",
+        // "react/sort-prop-types": "warn",
+        // "react/state-in-constructor": "warn",
+        // "react/static-property-placement": "warn",
+        "react/style-prop-object": "warn",
+        "react/void-dom-elements-no-children": "warn",
+
+
+        /**
+        * @description: rules for react jsx-runtime
+        * @see https://github.com/jsx-eslint/eslint-plugin-react/blob/c8917b0885094b5e4cc2a6f613f7fb6f16fe932e/index.js#L163-L176
+        */
+
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-uses-react": "off",
+
+
+        /**
+         * last
+         * @description: dummy rule, to avoid dealing with trailing commas above
+         */
+        "": "off"
+    }
+}

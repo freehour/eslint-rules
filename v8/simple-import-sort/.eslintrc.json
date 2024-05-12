@@ -1,0 +1,50 @@
+{
+    "rules": {
+
+        /**
+         * @description: eslint stylistic rules
+         * @see https://github.com/lydell/eslint-plugin-simple-import-sort/
+         * @version 12.1.0
+         */
+
+        "simple-import-sort/imports": [
+            "warn",
+            {
+                "groups": [
+                    // Side effect imports.
+                    [
+                        "^\\u0000"
+                    ],
+                    // Unscoped packages `react` related packages come first.
+                    [
+                        "^react",
+                        "^\\w"
+                    ],
+                    // Scoped packages.
+                    [
+                        "^@\\w"
+                    ],
+                    // Internal packages.
+                    [
+                        "^@/"
+                    ],
+                    // Parent imports. Put `..` last.
+                    [
+                        "^\\.\\.(?!/?$)",
+                        "^\\.\\./?$"
+                    ],
+                    // Other relative imports. Put same-folder imports and `.` last.
+                    [
+                        "^\\./(?=.*/)(?!/?$)",
+                        "^\\.(?!/?$)",
+                        "^\\./?$"
+                    ],
+                    // Style imports.
+                    [
+                        "^.+\\.s?css$"
+                    ]
+                ]
+            }
+        ]
+    }
+}

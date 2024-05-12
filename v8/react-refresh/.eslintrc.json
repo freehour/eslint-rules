@@ -1,0 +1,22 @@
+{
+    "rules": {
+        /**
+         * @description: rules that validate that your components can safely be updated with fast refresh.
+         * @see https://github.com/ArnaudBarre/eslint-plugin-react-refresh
+         */
+
+        "react-refresh/only-export-components": [
+            "warn",
+            {
+                "allowConstantExport": true
+            }
+        ],
+
+
+        /**
+         * last
+         * @description: dummy rule, to avoid dealing with trailing commas above
+         */
+        "": "off"
+    }
+}
