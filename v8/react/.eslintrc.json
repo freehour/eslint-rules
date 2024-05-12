@@ -88,7 +88,7 @@
         "react/jsx-no-constructed-context-values": "warn",
         "react/jsx-no-duplicate-props": "warn",
         // "react/jsx-no-leaked-render": "warn",
-        // "react/jsx-no-literals": "warn", // <---- is {"string"} fixed?
+        // "react/jsx-no-literals": "warn",
         "react/jsx-no-script-url": "warn",
         "react/jsx-no-target-blank": "error",
         "react/jsx-no-undef": "warn",
@@ -103,7 +103,7 @@
         "react/jsx-props-no-multi-spaces": "warn",
         // "react/jsx-props-no-spreading": "warn",
         // "react/jsx-sort-props": "warn",
-        "react/jsx-tag-spacing": "warn", // <---- check if defaults are good
+        "react/jsx-tag-spacing": "warn",
         // "react/jsx-uses-react": "warn",
         "react/jsx-uses-vars": "warn",
         "react/jsx-wrap-multilines": [
