@@ -83,7 +83,10 @@
         "@stylistic/js/object-curly-newline": [
             "warn",
             {
-                "multiline": true
+                "ObjectExpression": {"consistent": true, "minProperties": 2},
+                "ObjectPattern": {"consistent": true, "minProperties": 2},
+                "ImportDeclaration": "never",
+                "ExportDeclaration": "never"
             }
         ],
         // "@stylistic/js/object-curly-spacing": "warn", EXTENDED
