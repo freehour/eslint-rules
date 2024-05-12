@@ -85,8 +85,8 @@
             {
                 "ObjectExpression": {"multiline": true, "consistent": true },
                 "ObjectPattern": {"multiline": true, "consistent": true },
-                "ImportDeclaration": "never",
-                "ExportDeclaration": "never"
+                "ImportDeclaration": {"multiline": true, "consistent": true },
+                "ExportDeclaration": {"multiline": true, "consistent": true }
             }
         ],
         // "@stylistic/js/object-curly-spacing": "warn", EXTENDED
