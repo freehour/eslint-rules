@@ -103,7 +103,10 @@
         ],
         "@stylistic/js/padded-blocks": [
             "warn",
-            "never"
+            {
+                "blocks": "never",
+                "switches": "never"
+            }
         ],
         // "@stylistic/js/padding-line-between-statements": "warn", EXTENDED
         // "@stylistic/js/quote-props": "warn", EXTENDED
