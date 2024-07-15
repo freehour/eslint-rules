@@ -167,7 +167,13 @@
             }
         ],
         // "@typescript-eslint/no-restricted-imports": ["error", "forbidden"],
-        "@typescript-eslint/no-shadow": "warn",
+        "@typescript-eslint/no-shadow": [
+            "warn",
+            {
+                "ignoreTypeValueShadow": true,
+                "ignoreFunctionTypeParameterNameValueShadow": true
+            }
+        ],
         "@typescript-eslint/no-unused-expressions": "warn",
         "@typescript-eslint/no-unused-vars": [
             "warn",
