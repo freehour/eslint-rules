@@ -65,7 +65,14 @@
         "@typescript-eslint/no-invalid-void-type": "warn",
         "@typescript-eslint/no-meaningless-void-operator": "warn",
         "@typescript-eslint/no-misused-new": "error",
-        "@typescript-eslint/no-misused-promises": "error",
+        "@typescript-eslint/no-misused-promises": [
+            "error",
+            {
+                "checksVoidReturn": {
+                    "attributes": false
+                }
+            }
+        ],
         "@typescript-eslint/no-mixed-enums": "warn",
         "@typescript-eslint/no-namespace": "error",
         "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "warn",
