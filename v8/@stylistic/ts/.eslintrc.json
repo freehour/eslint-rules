@@ -67,7 +67,11 @@
         "@stylistic/ts/space-before-blocks": "warn",
         "@stylistic/ts/space-before-function-paren": [
             "warn",
-            "never"
+            {
+                "anonymous": "never",
+                "named": "never",
+                "asyncArrow": "always"
+            }
         ],
         "@stylistic/ts/space-infix-ops": "warn",
         "@stylistic/ts/type-annotation-spacing": "warn",
