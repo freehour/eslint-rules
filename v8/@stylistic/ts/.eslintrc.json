@@ -3,7 +3,7 @@
         /**
          * @description: eslint stylistic typescript rules
          * @see https://eslint.style/packages/ts#rules
-         * @version 2.1.0
+         * @version 2.9.0
          */
 
         "@stylistic/ts/block-spacing": "warn",
@@ -22,7 +22,7 @@
             }
         ],
         "@stylistic/ts/comma-spacing": "warn",
-        // "@stylistic/ts/func-call-spacing": "warn", // DEPRECATED
+        // "@stylistic/ts/func-call-spacing": "warn", DEPRECATED
         "@stylistic/ts/function-call-spacing": "warn",
         "@stylistic/ts/indent": [
             "warn",
@@ -43,9 +43,24 @@
             }
         ],
         "@stylistic/ts/no-extra-semi": "warn",
+        "@stylistic/ts/object-curly-newline": [
+            "warn",
+            {
+                "ObjectExpression": {"multiline": true, "consistent": true },
+                "ObjectPattern": {"multiline": true, "consistent": true },
+                "ImportDeclaration": {"multiline": true, "consistent": true },
+                "ExportDeclaration": {"multiline": true, "consistent": true }
+            }
+        ],
         "@stylistic/ts/object-curly-spacing": [
             "warn",
             "always"
+        ],
+        "@stylistic/ts/object-property-newline": [
+            "warn",
+            {
+                "allowAllPropertiesOnSameLine": true
+            }
         ],
         "@stylistic/ts/padding-line-between-statements": [
             "warn",

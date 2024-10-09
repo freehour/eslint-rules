@@ -3,7 +3,7 @@
         /**
          * @description: eslint rules for react
          * @see https://github.com/jsx-eslint/eslint-plugin-react?tab=readme-ov-file#list-of-supported-rules
-         * @version 7.34.1
+         * @version 7.37.1
          */
 
         // "react/boolean-prop-naming": "warn",
@@ -17,6 +17,7 @@
         // "react/forbid-elements": "warn",
         // "react/forbid-foreign-prop-types": "warn",
         // "react/forbid-prop-types": "warn",
+        "react/forward-ref-uses-ref": "warn",
         "react/function-component-definition": [
             "warn",
             {
@@ -101,8 +102,11 @@
         ],
         // "react/jsx-pascal-case": "warn",
         "react/jsx-props-no-multi-spaces": "warn",
+        "react/jsx-props-no-spread-multi": "warn",
         // "react/jsx-props-no-spreading": "warn",
+        // "react/jsx-sort-default-props": "warn" DEPRECATED,
         // "react/jsx-sort-props": "warn",
+        // "react/jsx-space-before-closing": "warn" DEPRECATED,
         "react/jsx-tag-spacing": "warn",
         // "react/jsx-uses-react": "warn",
         "react/jsx-uses-vars": "warn",
@@ -123,12 +127,12 @@
         "react/no-array-index-key": "warn",
         // "react/no-arrow-function-lifecycle": "warn",
         "react/no-children-prop": "warn",
-        "react/no-danger-with-children": "warn",
         // "react/no-danger": "warn",
+        "react/no-danger-with-children": "warn",
         "react/no-deprecated": "warn",
         // "react/no-did-mount-set-state": "warn",
         // "react/no-did-update-set-state": "warn",
-        // "react/no-direct-mutation-state": "warn",
+        "react/no-direct-mutation-state": "error",
         "react/no-find-dom-node": "warn",
         "react/no-invalid-html-attribute": "warn",
         // "react/no-is-mounted": "warn",
@@ -151,7 +155,7 @@
         // "react/no-will-update-set-state": "warn",
         // "react/prefer-es6-class": "warn",
         // "react/prefer-exact-props": "warn",
-        // "react/prefer-read-only-props": "warn", // <---- best practice?
+        // "react/prefer-read-only-props": "warn",
         "react/prefer-stateless-function": "error",
         "react/prop-types": "warn",
         // "react/react-in-jsx-scope": "warn",

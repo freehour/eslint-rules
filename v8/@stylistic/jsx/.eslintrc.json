@@ -1,0 +1,38 @@
+{
+    "rules": {
+        /**
+         * @description: eslint stylistic jsx rules
+         * @see https://eslint.style/packages/jsx#rules
+         * @version 2.9.0
+         */
+
+        // "@stylistic/jsx/jsx-child-element-spacing": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-closing-bracket-location": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-closing-tag-location": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-curly-brace-presence": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-curly-newline": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-curly-spacing": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-equals-spacing": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-first-prop-new-line": "warn" EXTENDED,
+        "@stylistic/jsx/jsx-function-call-newline": "warn",
+        // "@stylistic/jsx/jsx-indent": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-indent-props": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-max-props-per-line": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-newline": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-one-expression-per-line": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-pascal-case": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-props-no-multi-spaces": "warn" EXTENDED,
+        "@stylistic/jsx/jsx-quotes": "warn",
+        "@stylistic/jsx/jsx-self-closing-comp": "warn",
+        // "@stylistic/jsx/jsx-sort-props": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-tag-spacing": "warn" EXTENDED,
+        // "@stylistic/jsx/jsx-wrap-multilines": "warn" EXTENDED,
+
+        /**
+         * last
+         * @description: dummy rule, to avoid dealing with trailing commas above
+         */
+
+         "": "off"
+    }
+}

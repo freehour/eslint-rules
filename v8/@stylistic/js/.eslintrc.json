@@ -3,7 +3,7 @@
         /**
          * @description: eslint stylistic rules
          * @see https://eslint.style/packages/js#rules
-         * @version 2.1.0
+         * @version 2.9.0
          */
 
         "@stylistic/js/array-bracket-newline": "warn",
@@ -32,7 +32,7 @@
             "warn",
             "consistent"
         ],
-        // "@stylistic/js/func-call-spacing": "warn", EXTENDED // DEPRECATED,
+        // "@stylistic/js/func-call-spacing": "warn", EXTENDED DEPRECATED,
         // "@stylistic/js/function-call-spacing": "warn", EXTENDED,
         "@stylistic/js/function-paren-newline": [
             "warn",
@@ -41,16 +41,38 @@
         // "@stylistic/js/generator-star-spacing": "warn",
         "@stylistic/js/implicit-arrow-linebreak": "warn",
         // "@stylistic/js/indent": "warn", EXTENDED,
+        // "@stylistic/js/indent-binary-ops": "warn" EXTENDED,
+        // "@stylistic/js/jsx-child-element-spacing": "warn" EXTENDED,
+        // "@stylistic/js/jsx-closing-bracket-location": "warn" EXTENDED,
+        // "@stylistic/js/jsx-closing-tag-location": "warn" EXTENDED,
+        // "@stylistic/js/jsx-curly-brace-presence": "warn" EXTENDED,
+        // "@stylistic/js/jsx-curly-newline": "warn" EXTENDED,
+        // "@stylistic/js/jsx-curly-spacing": "warn" EXTENDED,
+        // "@stylistic/js/jsx-equals-spacing": "warn" EXTENDED,
+        // "@stylistic/js/jsx-first-prop-new-line": "warn" EXTENDED,
+        "@stylistic/js/jsx-function-call-newline": "warn",
+        // "@stylistic/js/jsx-indent": "warn" EXTENDED,
+        // "@stylistic/js/jsx-indent-props": "warn" EXTENDED,
+        // "@stylistic/js/jsx-max-props-per-line": "warn" EXTENDED,
+        // "@stylistic/js/jsx-newline": "warn" EXTENDED,
+        // "@stylistic/js/jsx-one-expression-per-line": "warn" EXTENDED,
+        // "@stylistic/js/jsx-pascal-case": "warn" EXTENDED,
+        // "@stylistic/js/jsx-props-no-multi-spaces": "warn" EXTENDED,
         "@stylistic/js/jsx-quotes": "warn",
+        "@stylistic/js/jsx-self-closing-comp": "warn",
+        // "@stylistic/js/jsx-sort-props": "warn" EXTENDED,
+        // "@stylistic/js/jsx-tag-spacing": "warn" EXTENDED,
+        // "@stylistic/js/jsx-wrap-multilines": "warn" EXTENDED,
         // "@stylistic/js/key-spacing": "warn" EXTENDED,
         // "@stylistic/js/keyword-spacing": "warn" EXTENDED,
         // "@stylistic/js/line-comment-position": "warn",
         "@stylistic/js/linebreak-style": "warn",
-        // "@stylistic/js/lines-around-comment": "warn", EXTENDED,
-        // "@stylistic/js/lines-between-class-members": "warn", EXTENDED,
+        // "@stylistic/js/lines-around-comment": "warn" EXTENDED,
+        // "@stylistic/js/lines-between-class-members": "warn" EXTENDED,
         // "@stylistic/js/max-len": "warn",
         "@stylistic/js/max-statements-per-line": "warn",
-        // "@stylistic/js/multiline-comment-style": "warn",
+        // "@stylistic/js/member-delimiter-style": "warn" EXTENDED,
+        "@stylistic/js/multiline-comment-style": "warn",
         "@stylistic/js/multiline-ternary": [
             "warn",
             "always-multiline"
@@ -80,22 +102,9 @@
         "@stylistic/js/no-trailing-spaces": "warn",
         "@stylistic/js/no-whitespace-before-property": "warn",
         // "@stylistic/js/nonblock-statement-body-position": "warn",
-        "@stylistic/js/object-curly-newline": [
-            "warn",
-            {
-                "ObjectExpression": {"multiline": true, "consistent": true },
-                "ObjectPattern": {"multiline": true, "consistent": true },
-                "ImportDeclaration": {"multiline": true, "consistent": true },
-                "ExportDeclaration": {"multiline": true, "consistent": true }
-            }
-        ],
+        // "@stylistic/js/object-curly-newline": "warn" EXTENDED,
         // "@stylistic/js/object-curly-spacing": "warn", EXTENDED
-        "@stylistic/js/object-property-newline": [
-            "warn",
-            {
-                "allowAllPropertiesOnSameLine": true
-            }
-        ],
+        // "@stylistic/js/object-property-newline": "warn" EXTENDED,
         "@stylistic/js/one-var-declaration-per-line": "warn",
         "@stylistic/js/operator-linebreak": [
             "warn",
@@ -124,6 +133,9 @@
         "@stylistic/js/switch-colon-spacing": "warn",
         "@stylistic/js/template-curly-spacing": "warn",
         "@stylistic/js/template-tag-spacing": "warn",
+        // "@stylistic/js/type-annotation-spacing": "warn" EXTENDED,
+        // "@stylistic/js/type-generic-spacing": "warn" EXTENDED,
+        // "@stylistic/js/type-named-tuple-spacing": "warn" EXTENDED,
         "@stylistic/js/wrap-iife": "warn",
         // "@stylistic/js/wrap-regex": "warn",
         // "@stylistic/js/yield-star-spacing": "warn",

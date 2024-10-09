@@ -3,10 +3,35 @@
         /**
          * @description: eslint stylistic plus rules
          * @see https://eslint.style/packages/plus#rules
-         * @version 2.1.0
+         * @version 2.9.0
          */
 
-
+         "@stylistic/plus/curly-newline": [
+            "warn",
+            {
+                "IfStatement": "always",
+                "ForStatement": "always",
+                "ForInStatement": "always",
+                "ForOfStatement": "always",
+                "WhileStatement": "always",
+                "DoWhileStatement": "always",
+                "SwitchStatement": "always",
+                "SwitchCase": "always",
+                "TryStatementBlock": "always",
+                "TryStatementHandler": "always",
+                "TryStatementFinalizer": "always",
+                "BlockStatement": "always",
+                "FunctionDeclaration": "always",
+                "FunctionExpression": "always",
+                "Property": "always",
+                "ClassBody": "always",
+                "StaticBlock": "always",
+                "WithStatement": "always",
+                "TSEnumBody": "always",
+                "TSInterfaceBody": "always",
+                "TSModuleBlock": "always"
+            }
+        ],
         "@stylistic/plus/indent-binary-ops": [
             "warn",
             4

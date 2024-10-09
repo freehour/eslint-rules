@@ -4,7 +4,7 @@
         /**
          * @description: eslint stylistic rules
          * @see https://github.com/lydell/eslint-plugin-simple-import-sort/
-         * @version 12.1.0
+         * @version 12.1.1
          */
 
         "simple-import-sort/imports": [

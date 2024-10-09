@@ -3,7 +3,7 @@
         /**
          * @description: rules related to possible logic errors
          * @see: https://eslint.org/docs/v8.x/rules/#possible-problems
-         * @version 8.57.0
+         * @version 8.57.1
          */
 
         "array-callback-return": "error",
@@ -84,6 +84,7 @@
         /**
          * @description: rules suggesting alternate ways of doing things
          * @see: https://eslint.org/docs/v8.x/rules/#suggestions
+         * @version: 8.57.1
          */
 
         "accessor-pairs": "warn",
@@ -257,6 +258,7 @@
         /**
          * @description: rules that care about how the code looks rather than how it executes:
          * @see: https://eslint.org/docs/v8.x/rules/#layout--formatting
+         * @version: 8.57.1
          */
         // "line-comment-position": "warn",
         "unicode-bom": "error",
