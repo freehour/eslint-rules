@@ -22,7 +22,6 @@
         // "@stylistic/jsx/jsx-one-expression-per-line": "warn" EXTENDED,
         // "@stylistic/jsx/jsx-pascal-case": "warn" EXTENDED,
         // "@stylistic/jsx/jsx-props-no-multi-spaces": "warn" EXTENDED,
-        "@stylistic/jsx/jsx-quotes": "warn",
         "@stylistic/jsx/jsx-self-closing-comp": "warn",
         // "@stylistic/jsx/jsx-sort-props": "warn" EXTENDED,
         // "@stylistic/jsx/jsx-tag-spacing": "warn" EXTENDED,
