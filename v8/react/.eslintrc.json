@@ -6,17 +6,17 @@
          * @version 7.37.1
          */
 
-        // "react/boolean-prop-naming": "warn",
+        "react/boolean-prop-naming": "off",
         "react/button-has-type": "warn",
         "react/checked-requires-onchange-or-readonly": "warn",
-        // "react/default-props-match-prop-types": "warn",
-        // "react/destructuring-assignment": "warn",
+        "react/default-props-match-prop-types": "off",
+        "react/destructuring-assignment": "off",
         "react/display-name": "warn",
-        // "react/forbid-component-props": "warn",
-        // "react/forbid-dom-props": "warn",
-        // "react/forbid-elements": "warn",
-        // "react/forbid-foreign-prop-types": "warn",
-        // "react/forbid-prop-types": "warn",
+        "react/forbid-component-props": "off",
+        "react/forbid-dom-props": "off",
+        "react/forbid-elements": "off",
+        "react/forbid-foreign-prop-types": "off",
+        "react/forbid-prop-types": "off",
         "react/forward-ref-uses-ref": "warn",
         "react/function-component-definition": [
             "warn",
@@ -27,9 +27,17 @@
         "react/hook-use-state": "warn",
         "react/iframe-missing-sandbox": "warn",
         "react/jsx-boolean-value": "warn",
+
+        "@stylistic/jsx/jsx-child-element-spacing": "off", // EXTENDED
         "react/jsx-child-element-spacing": "warn",
+
+        "@stylistic/jsx/jsx-closing-bracket-location": "off", // EXTENDED
         "react/jsx-closing-bracket-location": "warn",
+
+        "@stylistic/jsx/jsx-closing-tag-location": "off", // EXTENDED
         "react/jsx-closing-tag-location": "warn",
+
+        "@stylistic/jsx/jsx-curly-brace-presence": "off", // EXTENDED
         "react/jsx-curly-brace-presence": [
             "warn",
             {
@@ -38,9 +46,17 @@
                 "propElementValues": "always"
             }
         ],
+
+
+        "@stylistic/jsx/jsx-curly-newline": "off", // EXTENDED
         "react/jsx-curly-newline": "warn",
+
+        "@stylistic/jsx/jsx-curly-spacing": "off", // EXTENDED
         "react/jsx-curly-spacing": "warn",
+
+        "@stylistic/jsx/jsx-equals-spacing": "off", // EXTENDED
         "react/jsx-equals-spacing": "warn",
+
         "react/jsx-filename-extension": [
             "warn",
             {
@@ -49,13 +65,16 @@
                 ]
             }
         ],
+
+        "@stylistic/jsx/jsx-first-prop-new-line": "off", // EXTENDED
         "react/jsx-first-prop-new-line": [
             "warn",
             "multiline"
         ],
         "react/jsx-fragments": "warn",
-        // "react/jsx-handler-names": "warn",
-        "react/jsx-indent-props": "warn",
+        "react/jsx-handler-names": "off",
+
+        "@stylistic/jsx/jsx-indent": "off", // EXTENDED
         "react/jsx-indent": [
             "warn",
             4,
@@ -63,8 +82,15 @@
                 "indentLogicalExpressions": true
             }
         ],
+
+        "@stylistic/jsx/jsx-indent-props": "off", // EXTENDED
+        "react/jsx-indent-props": "warn",
+
+
         "react/jsx-key": "warn",
-        // "react/jsx-max-depth": "warn",
+        "react/jsx-max-depth": "off",
+
+        "@stylistic/jsx/jsx-max-props-per-line": "off", // EXTENDED
         "react/jsx-max-props-per-line": [
             "warn",
             {
@@ -72,12 +98,15 @@
                 "when": "multiline"
             }
         ],
+
+        "@stylistic/jsx/jsx-newline": "off", // EXTENDED
         "react/jsx-newline": [
             "warn",
             {
                 "prevent": true
             }
         ],
+
         "react/jsx-no-bind": [
             "warn",
             {
@@ -85,31 +114,43 @@
                 "ignoreRefs": true
             }
         ],
+
         "react/jsx-no-comment-textnodes": "warn",
         "react/jsx-no-constructed-context-values": "warn",
         "react/jsx-no-duplicate-props": "warn",
-        // "react/jsx-no-leaked-render": "warn",
-        // "react/jsx-no-literals": "warn",
+        "react/jsx-no-leaked-render": "off",
+        "react/jsx-no-literals": "off",
         "react/jsx-no-script-url": "warn",
         "react/jsx-no-target-blank": "error",
         "react/jsx-no-undef": "warn",
         "react/jsx-no-useless-fragment": "warn",
+
+        "@stylistic/jsx/jsx-one-expression-per-line": "off", // EXTENDED
         "react/jsx-one-expression-per-line": [
             "warn",
             {
                 "allow": "single-child"
             }
         ],
-        // "react/jsx-pascal-case": "warn",
+
+        "@stylistic/jsx/jsx-pascal-case": "off", // EXTENDED
+        "react/jsx-pascal-case": "off",
+
+        "@stylistic/jsx/jsx-props-no-multi-spaces": "off", // EXTENDED
         "react/jsx-props-no-multi-spaces": "warn",
+
         "react/jsx-props-no-spread-multi": "warn",
-        // "react/jsx-props-no-spreading": "warn",
-        // "react/jsx-sort-default-props": "warn" DEPRECATED,
-        // "react/jsx-sort-props": "warn",
-        // "react/jsx-space-before-closing": "warn" DEPRECATED,
+        "react/jsx-props-no-spreading": "off",
+
+        "@stylistic/jsx/jsx-sort-props": "off", // EXTENDED
+        "react/jsx-sort-props": "off",
+
+        "@stylistic/jsx/jsx-tag-spacing": "off", // EXTENDED
         "react/jsx-tag-spacing": "warn",
-        // "react/jsx-uses-react": "warn",
+
         "react/jsx-uses-vars": "warn",
+
+        "@stylistic/jsx/jsx-wrap-multilines": "off", // EXTENDED
         "react/jsx-wrap-multilines": [
             "warn",
             {
@@ -122,52 +163,51 @@
                 "prop": "parens-new-line"
             }
         ],
-        // "react/no-access-state-in-setstate": "warn",
-        // "react/no-adjacent-inline-elements": "warn",
+        "react/no-access-state-in-setstate": "off",
+        "react/no-adjacent-inline-elements": "off",
         "react/no-array-index-key": "warn",
-        // "react/no-arrow-function-lifecycle": "warn",
+        "react/no-arrow-function-lifecycle": "off",
         "react/no-children-prop": "warn",
-        // "react/no-danger": "warn",
+        "react/no-danger": "off",
         "react/no-danger-with-children": "warn",
         "react/no-deprecated": "warn",
-        // "react/no-did-mount-set-state": "warn",
-        // "react/no-did-update-set-state": "warn",
+        "react/no-did-mount-set-state": "off",
+        "react/no-did-update-set-state": "off",
         "react/no-direct-mutation-state": "error",
         "react/no-find-dom-node": "warn",
         "react/no-invalid-html-attribute": "warn",
-        // "react/no-is-mounted": "warn",
-        // "react/no-multi-comp": "warn",
+        "react/no-is-mounted": "off",
+        "react/no-multi-comp": "off",
         "react/no-namespace": "warn",
-        // "react/no-object-type-as-default-prop": "warn",
-        // "react/no-redundant-should-component-update": "warn",
+        "react/no-object-type-as-default-prop": "off",
+        "react/no-redundant-should-component-update": "off",
         "react/no-render-return-value": "warn",
-        // "react/no-set-state": "warn",
+        "react/no-set-state": "off",
         "react/no-string-refs": "warn",
         "react/no-this-in-sfc": "warn",
-        // "react/no-typos": "warn",
+        "react/no-typos": "off",
         "react/no-unescaped-entities": "warn",
         "react/no-unknown-property": "warn",
-        // "react/no-unsafe": "warn",
+        "react/no-unsafe": "off",
         "react/no-unstable-nested-components": "warn",
-        // "react/no-unused-class-component-methods": "warn",
-        // "react/no-unused-prop-types": "warn",
-        // "react/no-unused-state": "warn",
-        // "react/no-will-update-set-state": "warn",
-        // "react/prefer-es6-class": "warn",
-        // "react/prefer-exact-props": "warn",
-        // "react/prefer-read-only-props": "warn",
+        "react/no-unused-class-component-methods": "off",
+        "react/no-unused-prop-types": "off",
+        "react/no-unused-state": "off",
+        "react/no-will-update-set-state": "off",
+        "react/prefer-es6-class": "off",
+        "react/prefer-exact-props": "off",
+        "react/prefer-read-only-props": "off",
         "react/prefer-stateless-function": "error",
         "react/prop-types": "warn",
-        // "react/react-in-jsx-scope": "warn",
-        // "react/require-default-props": "warn",
-        // "react/require-optimization": "warn",
-        // "react/require-render-return": "warn",
+        "react/require-default-props": "off",
+        "react/require-optimization": "off",
+        "react/require-render-return": "off",
         "react/self-closing-comp": "warn",
-        // "react/sort-comp": "warn",
-        // "react/sort-default-props": "warn",
-        // "react/sort-prop-types": "warn",
-        // "react/state-in-constructor": "warn",
-        // "react/static-property-placement": "warn",
+        "react/sort-comp": "off",
+        "react/sort-default-props": "off",
+        "react/sort-prop-types": "off",
+        "react/state-in-constructor": "off",
+        "react/static-property-placement": "off",
         "react/style-prop-object": "warn",
         "react/void-dom-elements-no-children": "warn",
 

@@ -37,15 +37,15 @@
          */
 
         "import-x/default": "error",
-        // "import-x/named": "error",
+        "import-x/named": "off",
         "import-x/namespace": "error",
         "import-x/no-absolute-path": "error",
         "import-x/no-cycle": "error",
         "import-x/no-dynamic-require": "warn",
-        // "import-x/no-internal-modules": "warn",
+        "import-x/no-internal-modules": "off",
         "import-x/no-relative-packages": "warn",
-        // "import-x/no-relative-parent-imports": "warn",
-        // "import-x/no-restricted-paths": "warn",
+        "import-x/no-relative-parent-imports": "off",
+        "import-x/no-restricted-paths": "off",
         "import-x/no-self-import": "warn",
         "import-x/no-unresolved": "error",
         "import-x/no-useless-path-segments": "warn",
@@ -58,23 +58,25 @@
          */
 
         "import-x/consistent-type-specifier-style": ["warn", "prefer-top-level"],
-        // "import-x/dynamic-import-chunkname": "warn",
-        // "import-x/exports-last": "warn",
+        "import-x/dynamic-import-chunkname": "off",
+        "import-x/exports-last": "off",
         "import-x/extensions": "warn",
         "import-x/first": "warn",
-        // "import-x/group-exports": "warn",
-        // "import-x/imports-first": "warn", DEPRECATED
-        // "import-x/max-dependencies": "warn",
+        "import-x/group-exports": "off",
+        "import-x/max-dependencies": "off",
         "import-x/newline-after-import": ["warn", { "count": 2, "considerComments": true }],
-        // "import-x/no-anonymous-default-export": "warn",
-        // "import-x/no-default-export": "warn",
+        "import-x/no-anonymous-default-export": "off",
+        "import-x/no-default-export": "off",
+
+        "no-duplicate-imports": "off", // EXTENDED
         "import-x/no-duplicates": "warn",
+
         "import-x/no-named-default": "warn",
-        // "import-x/no-named-export": "warn",
-        // "import-x/no-namespace": "warn",
-        // "import-x/no-unassigned-import": "warn",
-        // "import-x/order": "warn",
-        // "import-x/prefer-default-export": "warn",
+        "import-x/no-named-export": "off",
+        "import-x/no-namespace": "off",
+        "import-x/no-unassigned-import": "off",
+        "import-x/order": "off",
+        "import-x/prefer-default-export": "off",
 
 
         /**

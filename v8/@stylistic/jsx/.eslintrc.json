@@ -6,26 +6,69 @@
          * @version 2.9.0
          */
 
-        // "@stylistic/jsx/jsx-child-element-spacing": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-closing-bracket-location": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-closing-tag-location": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-curly-brace-presence": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-curly-newline": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-curly-spacing": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-equals-spacing": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-first-prop-new-line": "warn" EXTENDED,
+        "@stylistic/jsx/jsx-child-element-spacing": "warn",
+        "@stylistic/jsx/jsx-closing-bracket-location": "warn",
+        "@stylistic/jsx/jsx-closing-tag-location": "warn",
+        "@stylistic/jsx/jsx-curly-brace-presence": [
+            "warn",
+            {
+                "props": "never",
+                "children": "never",
+                "propElementValues": "always"
+            }
+        ],
+        "@stylistic/jsx/jsx-curly-newline": "warn",
+        "@stylistic/jsx/jsx-curly-spacing": "warn",
+        "@stylistic/jsx/jsx-equals-spacing": "warn",
+        "@stylistic/jsx/jsx-first-prop-new-line": [
+            "warn",
+            "multiline"
+        ],
         "@stylistic/jsx/jsx-function-call-newline": "warn",
-        // "@stylistic/jsx/jsx-indent": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-indent-props": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-max-props-per-line": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-newline": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-one-expression-per-line": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-pascal-case": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-props-no-multi-spaces": "warn" EXTENDED,
+        "@stylistic/jsx/jsx-indent": [
+            "warn",
+            4,
+            {
+                "indentLogicalExpressions": true
+            }
+        ],
+        "@stylistic/jsx/jsx-indent-props": "warn",
+        "@stylistic/jsx/jsx-max-props-per-line":  [
+            "warn",
+            {
+                "maximum": 1,
+                "when": "multiline"
+            }
+        ],
+        "@stylistic/jsx/jsx-newline":  [
+            "warn",
+            {
+                "prevent": true
+            }
+        ],
+        "@stylistic/jsx/jsx-one-expression-per-line":  [
+            "warn",
+            {
+                "allow": "single-child"
+            }
+        ],
+        "@stylistic/jsx/jsx-pascal-case": "warn",
+        "@stylistic/jsx/jsx-props-no-multi-spaces": "warn",
         "@stylistic/jsx/jsx-self-closing-comp": "warn",
-        // "@stylistic/jsx/jsx-sort-props": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-tag-spacing": "warn" EXTENDED,
-        // "@stylistic/jsx/jsx-wrap-multilines": "warn" EXTENDED,
+        "@stylistic/jsx/jsx-sort-props": "off",
+        "@stylistic/jsx/jsx-tag-spacing": "warn",
+        "@stylistic/jsx/jsx-wrap-multilines": [
+            "warn",
+            {
+                "declaration": "parens-new-line",
+                "assignment": "parens-new-line",
+                "return": "parens-new-line",
+                "arrow": "parens-new-line",
+                "condition": "parens-new-line",
+                "logical": "parens-new-line",
+                "prop": "parens-new-line"
+            }
+        ],
 
         /**
          * last

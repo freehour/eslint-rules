@@ -7,11 +7,12 @@
          */
 
         "@stylistic/plus/curly-newline": "warn",
-        "@stylistic/plus/indent-binary-ops": [
-            "warn",
-            4
-        ],
+        "@stylistic/plus/indent-binary-ops": ["warn", 4],
+
+        "@stylistic/js/type-generic-spacing": "off", // EXTENDED
         "@stylistic/plus/type-generic-spacing": "warn",
+
+        "@stylistic/js/type-named-tuple-spacing": "off", // EXTENDED
         "@stylistic/plus/type-named-tuple-spacing": "warn",
 
 

@@ -31,9 +31,9 @@
             }
         ],
         "@typescript-eslint/explicit-module-boundary-types": "error",
-        // "@typescript-eslint/member-ordering": "warn",
+        "@typescript-eslint/member-ordering": "off",
         "@typescript-eslint/method-signature-style": "warn",
-        // "@typescript-eslint/naming-convention": "warn",
+        "@typescript-eslint/naming-convention": "off",
         "@typescript-eslint/no-array-delete": "error",
         "@typescript-eslint/no-base-to-string": "warn",
         "@typescript-eslint/no-confusing-non-null-assertion": "warn",
@@ -79,7 +79,7 @@
         "@typescript-eslint/no-non-null-assertion": "error",
         "@typescript-eslint/no-redundant-type-constituents": "warn",
         "@typescript-eslint/no-require-imports": "warn",
-        // "@typescript-eslint/no-restricted-types": "error",
+        "@typescript-eslint/no-restricted-types": "off",
         "@typescript-eslint/no-this-alias": "error",
         "@typescript-eslint/no-unnecessary-boolean-literal-compare": "warn",
         "@typescript-eslint/no-unnecessary-condition": "warn",
@@ -88,14 +88,14 @@
         "@typescript-eslint/no-unnecessary-type-arguments": "warn",
         "@typescript-eslint/no-unnecessary-type-assertion": "error",
         "@typescript-eslint/no-unnecessary-type-constraint": "error",
-        // "@typescript-eslint/no-unsafe-argument": "error",
-        // "@typescript-eslint/no-unsafe-assignment": "error",
-        // "@typescript-eslint/no-unsafe-call": "error",
+        "@typescript-eslint/no-unsafe-argument": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
         "@typescript-eslint/no-unsafe-declaration-merging": "error",
-        // "@typescript-eslint/no-unsafe-enum-comparison": "error",
+        "@typescript-eslint/no-unsafe-enum-comparison": "off",
         "@typescript-eslint/no-unsafe-function-type": "warn",
-        // "@typescript-eslint/no-unsafe-member-access": "error",
-        // "@typescript-eslint/no-unsafe-return": "error",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/no-unsafe-return": "off",
         "@typescript-eslint/no-unsafe-unary-minus": "error",
         "@typescript-eslint/no-useless-empty-export": "warn",
         "@typescript-eslint/no-var-requires": "error",
@@ -113,12 +113,12 @@
         "@typescript-eslint/prefer-for-of": "warn",
         "@typescript-eslint/prefer-function-type": "warn",
         "@typescript-eslint/prefer-includes": "warn",
-        // "@typescript-eslint/prefer-literal-enum-member": "warn",
+        "@typescript-eslint/prefer-literal-enum-member": "off",
         "@typescript-eslint/prefer-namespace-keyword": "error",
         "@typescript-eslint/prefer-nullish-coalescing": "warn",
         "@typescript-eslint/prefer-optional-chain": "warn",
         "@typescript-eslint/prefer-readonly": "warn",
-        // "@typescript-eslint/prefer-readonly-parameter-types": "warn",
+        "@typescript-eslint/prefer-readonly-parameter-types": "off",
         "@typescript-eslint/prefer-reduce-type-parameter": "warn",
         "@typescript-eslint/prefer-regexp-exec": "warn",
         "@typescript-eslint/prefer-return-this-type": "warn",
@@ -126,12 +126,12 @@
         "@typescript-eslint/prefer-ts-expect-error": "warn",
         "@typescript-eslint/promise-function-async": "warn",
         "@typescript-eslint/require-array-sort-compare": "warn",
-        // "@typescript-eslint/restrict-plus-operands": "error",
-        // "@typescript-eslint/restrict-template-expressions": "error",
+        "@typescript-eslint/restrict-plus-operands": "off",
+        "@typescript-eslint/restrict-template-expressions": "off",
         "@typescript-eslint/strict-boolean-expressions": "warn",
         "@typescript-eslint/switch-exhaustiveness-check": "warn",
         "@typescript-eslint/triple-slash-reference": "error",
-        // "@typescript-eslint/typedef": "warn",
+        "@typescript-eslint/typedef": "off",
         "@typescript-eslint/unbound-method": [
             "error",
             {
@@ -139,7 +139,7 @@
             }
         ],
         "@typescript-eslint/unified-signatures": "warn",
-        // "@typescript-eslint/use-unknown-in-catch-callback-variable": "warn",
+        "@typescript-eslint/use-unknown-in-catch-callback-variable": "off",
 
 
         /**
@@ -148,52 +148,100 @@
          * @version 8.8.1
          */
 
-        // "@typescript-eslint/class-methods-use-this": "warn",
-        // "@typescript-eslint/consistent-return": "warn",
+        "class-methods-use-this": "off", // EXTENDED
+        "@typescript-eslint/class-methods-use-this": "off",
+
+        "consistent-return": "off", // EXTENDED
+        "@typescript-eslint/consistent-return": "off",
+
+
+        "default-param-last": "off", // EXTENDED
         "@typescript-eslint/default-param-last": "error",
+
+        "dot-notation": "off", // EXTENDED
         "@typescript-eslint/dot-notation": [
             "error",
             {
                 "allowIndexSignaturePropertyAccess": true
             }
         ],
+
+        "init-declarations": "off", // EXTENDED
         "@typescript-eslint/init-declarations": "error",
-        // "@typescript-eslint/max-params": ["warn", { max: <n> }],
+
+        "max-params": "off", // EXTENDED
+        "@typescript-eslint/max-params": "off",
+
+        "no-array-constructor": "off", // EXTENDED
         "@typescript-eslint/no-array-constructor": "error",
+
+        "no-dupe-class-members": "off", // EXTENDED
         "@typescript-eslint/no-dupe-class-members": "warn",
-        // "@typescript-eslint/no-empty-function": "error",
+
+        "no-empty-function": "off", // EXTENDED
+        "@typescript-eslint/no-empty-function": "off",
+
+        "no-implied-eval": "off", // EXTENDED
         "@typescript-eslint/no-implied-eval": "error",
+
+        "no-invalid-this": "off", // EXTENDED
         "@typescript-eslint/no-invalid-this": "warn",
+
+        "no-loop-func": "off", // EXTENDED
         "@typescript-eslint/no-loop-func": "warn",
+
+        "no-loss-of-precision": "off", // EXTENDED
         "@typescript-eslint/no-loss-of-precision": "error",
-        // "@typescript-eslint/no-magic-numbers": "warn",
+
+        "no-magic-numbers": "off", // EXTENDED
+        "@typescript-eslint/no-magic-numbers": "off",
+
+        "no-redeclare": "off", // EXTENDED
         "@typescript-eslint/no-redeclare": [
             "warn",
             {
                 "builtinGlobals": false
             }
         ],
-        // "@typescript-eslint/no-restricted-imports": ["error", "forbidden"],
-        // "@typescript-eslint/no-shadow": [
-        //     "warn",
-        //     {
-        //         "ignoreTypeValueShadow": true,
-        //         "ignoreFunctionTypeParameterNameValueShadow": true
-        //     }
-        // ],
+
+        "no-restricted-imports": "off", // EXTENDED
+        "@typescript-eslint/no-restricted-imports": "off",
+
+        "no-shadow": "off", // EXTENDED
+        "@typescript-eslint/no-shadow": "off",
+
+        "no-unused-expressions": "off", // EXTENDED
         "@typescript-eslint/no-unused-expressions": "warn",
+
+        "no-unused-vars": "off", // EXTENDED
         "@typescript-eslint/no-unused-vars": [
             "warn",
             {
                 "args": "none"
             }
         ],
+
+        "no-use-before-define": "off", // EXTENDED
         "@typescript-eslint/no-use-before-define": "warn",
+
+        "no-useless-constructor": "off", // EXTENDED
         "@typescript-eslint/no-useless-constructor": "warn",
-        "@typescript-eslint/only-throw-error": "warn",
+
+        "no-throw-literal": "off", // EXTENDED
+        "@typescript-eslint/only-throw-error": "error",
+
+        "prefer-destructuring": "off", // EXTENDED
         "@typescript-eslint/prefer-destructuring": "warn",
+
+
+        "prefer-promise-reject-errors": "off", // EXTENDED
         "@typescript-eslint/prefer-promise-reject-errors": "warn",
-        // "@typescript-eslint/require-await": "error",
+
+
+        "require-await": "off", // EXTENDED
+        "@typescript-eslint/require-await": "off",
+
+        "no-return-await": "off", // EXTENDED
         "@typescript-eslint/return-await": "error",
 
         /**
