@@ -48,7 +48,7 @@ This is the full configuration with all plugins listed below. You can omit the p
         "./eslint/v8/@stylistic/ts/.eslintrc.json",
         "./eslint/v8/@typescript-eslint/.eslintrc.json",
         "./eslint/v8/import-x/.eslintrc.json",
-        "./eslint/v8/simple-import-sort/.eslintrc.json"
+        "./eslint/v8/simple-import-sort/.eslintrc.json",
         "./eslint/v8/react/.eslintrc.json",
         "./eslint/v8/react-hooks/.eslintrc.json",
         "./eslint/v8/react-refresh/.eslintrc.json",
