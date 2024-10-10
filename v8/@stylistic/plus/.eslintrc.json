@@ -6,7 +6,7 @@
          * @version 2.9.0
          */
 
-         "@stylistic/plus/curly-newline": "warn",
+        "@stylistic/plus/curly-newline": "warn",
         "@stylistic/plus/indent-binary-ops": [
             "warn",
             4

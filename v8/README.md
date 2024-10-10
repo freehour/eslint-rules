@@ -5,18 +5,19 @@
 ```jsonc
 // package.json
   "devDependencies": {
-    "@eslint/js": "8.57.1",
+    "eslint": "8.57.1",
     "@stylistic/eslint-plugin-js": "2.9.0",
     "@stylistic/eslint-plugin-ts": "2.9.0",
     "@stylistic/eslint-plugin-jsx": "2.9.0",
     "@stylistic/eslint-plugin-plus": "2.9.0",
-    "typescript-eslint": "8.8.1",
+    "@typescript-eslint/eslint-plugin": "8.8.1",
+    "@typescript-eslint/parser": "8.8.1",
     "eslint-import-resolver-typescript": "3.6.3",
     "eslint-plugin-import-x": "4.3.1",
     "eslint-plugin-react": "7.37.1",
     "eslint-plugin-react-hooks": "4.6.2",
     "eslint-plugin-react-refresh": "0.4.12",
-    "eslint-plugin-simple-import-sort": "12.1.1"
+    "eslint-plugin-simple-import-sort": "12.1.1",
     //...
   },
 
