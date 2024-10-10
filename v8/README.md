@@ -56,6 +56,7 @@ This is the full configuration with all plugins listed below. You can omit the p
     "settings": {
         // If you don't use import-x or typescript, you can omit these settings.
         "import-x/parsers": {
+            // You can omit .tsx if you don't use JSX with TypeScript.
             "@typescript-eslint/parser": [".ts", ".tsx"]
         },
         "import-x/resolver": {
