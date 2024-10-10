@@ -54,6 +54,10 @@ This is the full configuration with all plugins listed below. You can omit the p
         "./eslint/v8/react-refresh/.eslintrc.json",
     ],
     "settings": {
+        // If you don't use React, you can omit this setting.
+        "react": {
+            "version": "detect"
+        },
         // If you don't use import-x or typescript, you can omit these settings.
         "import-x/parsers": {
             // You can omit .tsx if you don't use JSX with TypeScript.
