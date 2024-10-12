@@ -12,7 +12,7 @@
         "import-x/no-extraneous-dependencies": "warn",
         "import-x/no-mutable-exports": "warn",
         "import-x/no-named-as-default": "warn",
-        "import-x/no-named-as-default-member": "warn",
+        "import-x/no-named-as-default-member": "off",
         "import-x/no-rename-default": "warn",
         "import-x/no-unused-modules": "warn",
 
