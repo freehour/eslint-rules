@@ -43,7 +43,15 @@
         "@stylistic/ts/keyword-spacing": "warn",
 
         "@stylistic/js/lines-around-comment": "off", // EXTENDED
-        "@stylistic/ts/lines-around-comment": ["warn", { "allowBlockStart": true }],
+        "@stylistic/ts/lines-around-comment": [
+            "warn",
+            {
+                "allowBlockStart": true,
+                "allowEnumStart": true,
+                "allowInterfaceStart": true,
+                "allowTypeStart": true
+            }
+        ],
 
         "@stylistic/js/lines-between-class-members": "off", // EXTENDED
         "@stylistic/ts/lines-between-class-members": [ "warn", "always", { "exceptAfterSingleLine": true } ],
