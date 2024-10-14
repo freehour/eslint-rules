@@ -79,7 +79,15 @@
                 "args": "none"
             }
         ],
-        "no-use-before-define": "warn",
+        "no-use-before-define": [
+            "warn",
+            {
+                "functions": false,
+                "classes": false,
+                "variables": true,
+                "allowNamedExports": false
+            }
+        ],
         "no-useless-backreference": "warn",
         "require-atomic-updates": "warn",
         "use-isnan": "error",
