@@ -54,7 +54,15 @@
         "@stylistic/js/keyword-spacing": "warn",
         "@stylistic/js/line-comment-position": "off",
         "@stylistic/js/linebreak-style": "warn",
-        "@stylistic/js/lines-around-comment":  ["warn", { "allowBlockStart": true }],
+        "@stylistic/js/lines-around-comment": [
+            "warn",
+            {
+                "allowArrayStart": true,
+                "allowBlockStart": true,
+                "allowClassStart": true,
+                "allowObjectStart": true
+            }
+        ],
         "@stylistic/js/lines-between-class-members": [ "warn", "always", { "exceptAfterSingleLine": true } ],
         "@stylistic/js/max-len": "off",
         "@stylistic/js/max-statements-per-line": "warn",

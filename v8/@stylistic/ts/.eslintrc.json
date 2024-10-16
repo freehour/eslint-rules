@@ -46,7 +46,10 @@
         "@stylistic/ts/lines-around-comment": [
             "warn",
             {
+                "allowArrayStart": true,
                 "allowBlockStart": true,
+                "allowClassStart": true,
+                "allowObjectStart": true,
                 "allowEnumStart": true,
                 "allowInterfaceStart": true,
                 "allowTypeStart": true
