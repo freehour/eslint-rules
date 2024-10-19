@@ -194,12 +194,7 @@
         "no-param-reassign": "off",
         "no-plusplus": "off",
         "no-proto": "error",
-        "no-redeclare":  [
-            "warn",
-            {
-                "builtinGlobals": false
-            }
-        ],
+        "no-redeclare":  "off",
         "no-regex-spaces": "warn",
         "no-restricted-exports": "off",
         "no-restricted-globals": "off",
