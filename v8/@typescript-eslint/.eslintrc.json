@@ -225,7 +225,7 @@
                 "variables": true,
                 "allowNamedExports": false,
                 "enums": true,
-                "typedefs": true,
+                "typedefs": false,
                 "ignoreTypeReferences": false
             }
         ],
