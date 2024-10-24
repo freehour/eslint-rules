@@ -67,7 +67,7 @@
         "@stylistic/js/max-len": "off",
         "@stylistic/js/max-statements-per-line": "warn",
         "@stylistic/js/member-delimiter-style": "warn",
-        "@stylistic/js/multiline-comment-style": "warn",
+        "@stylistic/js/multiline-comment-style": "off",
         "@stylistic/js/multiline-ternary": [
             "warn",
             "always-multiline"
