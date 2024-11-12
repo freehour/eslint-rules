@@ -126,13 +126,7 @@
             "warn",
             "before"
         ],
-        "@stylistic/js/padded-blocks": [
-            "warn",
-            {
-                "blocks": "never",
-                "switches": "never"
-            }
-        ],
+        "@stylistic/js/padded-blocks": "off",
         "@stylistic/js/padding-line-between-statements": [
             "warn",
             {
