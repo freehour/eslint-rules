@@ -15,7 +15,7 @@ This is the full configuration with all plugins listed below. You can omit the p
     "@typescript-eslint/eslint-plugin": "8.14.0",
     "@typescript-eslint/parser": "8.14.0",
     "eslint-import-resolver-typescript": "3.6.3",
-    "eslint-plugin-import-x": "4.4.2",
+    "eslint-plugin-import-x": "4.4.3",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "eslint-plugin-react": "7.37.2",
     "eslint-plugin-react-hooks": "5.0.0",
