@@ -165,7 +165,7 @@
         ],
         "react/no-access-state-in-setstate": "off",
         "react/no-adjacent-inline-elements": "off",
-        "react/no-array-index-key": "warn",
+        "react/no-array-index-key": "off",
         "react/no-arrow-function-lifecycle": "off",
         "react/no-children-prop": "warn",
         "react/no-danger": "off",
