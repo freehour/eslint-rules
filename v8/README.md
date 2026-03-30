@@ -1,6 +1,6 @@
-
-
 # Legacy Config v8
+
+*Note: This configuration is for ESLint v8 and will not get any rule updates, use the v9 configuration for the latest rules.*
 
 This is the full configuration with all plugins listed below. You can omit the plugins you don't need.
 

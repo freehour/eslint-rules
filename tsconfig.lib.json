@@ -1,0 +1,28 @@
+/* Visit https://aka.ms/tsconfig to read more about this file */
+{
+  "include": [
+    "lib"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "lib": [
+      "ESNext"
+    ],
+    "paths": {
+      "@/*": [
+        "./lib/*"
+      ]
+    },
+    "declaration": true,
+    "declarationMap": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    "exactOptionalPropertyTypes": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+  }
+}
