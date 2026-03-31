@@ -7,6 +7,8 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import reactRefreshPlugin from 'eslint-plugin-react-refresh';
 import stylisticPlugin from '@stylistic/eslint-plugin';
 import importXPlugin from 'eslint-plugin-import-x';
+import tailwindcssPlugin from 'eslint-plugin-tailwindcss';
+import simpleImportSortPlugin from 'eslint-plugin-simple-import-sort';
 
 
 export interface ConfigOptions {
@@ -22,19 +24,21 @@ export interface ConfigOptions {
 
     /**
      * Enable when using React.
-     * Requires `eslint-plugin-react` to be installed.
      */
     react?: boolean;
 
     /**
+     * Enable when using Tailwind CSS.
+     */
+    tailwindcss?: boolean;
+
+    /**
      * Enable to use stylistic rules.
-     * Requires `@stylistic/eslint-plugin` to be installed.
      */
     stylistic?: boolean;
 
     /**
      * Enable to use import rules.
-     * Requires `eslint-plugin-import-x` and `eslint-import-resolver-typescript` to be installed.
      */
     imports?: boolean;
 }
@@ -43,6 +47,7 @@ export async function createConfig({
     node = false,
     browser = false,
     react = false,
+    tailwindcss = false,
     stylistic = false,
     imports = false,
 }: ConfigOptions = {}): Promise<Config> {
@@ -78,6 +83,19 @@ export async function createConfig({
                     version: 'detect',
                 },
             },
+            ...tailwindcss && {
+                tailwindcss: {
+                    callees: [
+                        'tw',
+                        'clsx',
+                        'cn',
+                        'cva',
+                        'twMerge',
+                        'classnames',
+                        'ctl'
+                    ],
+                },
+            },
         },
         plugins: {
             '@typescript-eslint': tseslint.plugin,
@@ -87,7 +105,8 @@ export async function createConfig({
                 'react-refresh': reactRefreshPlugin,
             },
             ...stylistic && { '@stylistic': stylisticPlugin },
-            ...imports && { 'import-x': importXPlugin },
+            ...imports && { 'import-x': importXPlugin, 'simple-import-sort': simpleImportSortPlugin },
+            ...tailwindcss && { 'tailwindcss': tailwindcssPlugin },
         },
         rules: {
             // base
@@ -120,7 +139,7 @@ export async function createConfig({
                 'no-duplicate-case': 'error',
                 'no-duplicate-imports': 'off',
                 'no-empty-character-class': 'error',
-                'no-empty-pattern': 'error',
+                'no-empty-pattern': 'warn',
                 'no-ex-assign': 'error',
                 'no-fallthrough': 'off',
                 'no-func-assign': 'error',
@@ -1132,6 +1151,69 @@ export async function createConfig({
                     },
                 ],
             },
+            // tailwindcss
+            ...tailwindcss && {
+                /**
+                 * @description rules for Tailwind CSS
+                 * @see https://github.com/francoismassart/eslint-plugin-tailwindcss
+                 * @version 4.0.0-beata.0
+                 */
+
+                'tailwindcss/classnames-order': 'warn',
+                'tailwindcss/enforces-negative-arbitrary-values': 'warn',
+                'tailwindcss/enforces-shorthand': 'warn',
+                'tailwindcss/migration-from-tailwind-2': 'off',
+                'tailwindcss/no-arbitrary-value': 'off',
+                'tailwindcss/no-custom-classname': 'warn',
+                'tailwindcss/no-contradicting-classname': 'off',
+                'tailwindcss/no-unnecessary-arbitrary-value': 'warn',
+            },
+            ...imports && {
+                /**
+                 * @description: eslint stylistic rules
+                 * @see https://github.com/lydell/eslint-plugin-simple-import-sort/
+                 * @version 12.1.1
+                 */
+
+                "simple-import-sort/imports": [
+                    "warn",
+                    {
+                        "groups": [
+                            // Side effect imports.
+                            [
+                                "^\\u0000"
+                            ],
+                            // Unscoped packages.
+                            [
+                                "^\\w"
+                            ],
+                            // Scoped packages.
+                            [
+                                "^@\\w"
+                            ],
+                            // Internal packages.
+                            [
+                                "^@/"
+                            ],
+                            // Parent imports. Put `..` last.
+                            [
+                                "^\\.\\.(?!/?$)",
+                                "^\\.\\./?$"
+                            ],
+                            // Other relative imports. Put same-folder imports and `.` last.
+                            [
+                                "^\\./(?=.*/)(?!/?$)",
+                                "^\\.(?!/?$)",
+                                "^\\./?$"
+                            ],
+                            // Style imports.
+                            [
+                                "^.+\\.s?css$"
+                            ]
+                        ]
+                    }
+                ]
+            }
         },
     };
 }

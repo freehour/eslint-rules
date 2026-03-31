@@ -21,14 +21,22 @@ export default defineConfig(
         // node: true,          // enable when targeting Node.js
         // browser: true,       // enable when targeting browsers
         // react: true,         // enable when using React
+        // tailwindcss: true,   // enable when using Tailwind CSS
         // stylistic: true,     // enable to use stylistic rules
         // imports: true,       // enable to use import rules
     }),
     {
         files: ['**/*.{ts,tsx}'],
+        settings: {
+            tailwindcss: {
+                // When using Tailwind CSS, make sure to specify the path to your Tailwind CSS configuration file. Must be an absolute path
+                config: '/workspaces/project/tailwind.css',
+            },
+        }
     },
 );
 ```
+
 The ESLint rules are designed to be compatible with the following TypeScript compiler options. Make sure to set them in your `tsconfig.json`:
 
 ```jsonc
