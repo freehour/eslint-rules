@@ -1175,10 +1175,10 @@ export async function createConfig({
                  * @version 12.1.1
                  */
 
-                "simple-import-sort/imports": [
-                    "warn",
+                'simple-import-sort/imports': [
+                    'warn',
                     {
-                        "groups": [
+                        groups: [
                             // Side effect imports.
                             [
                                 "^\\u0000"
@@ -1212,7 +1212,8 @@ export async function createConfig({
                             ]
                         ]
                     }
-                ]
+                ],
+                'simple-import-sort/exports': 'warn',
             }
         },
     };
