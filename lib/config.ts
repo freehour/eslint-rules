@@ -576,7 +576,7 @@ export async function createConfig({
                     'in-try-catch',
                 ],
                 '@typescript-eslint/strict-boolean-expressions': 'warn',
-                '@typescript-eslint/strict-void-return': 'error',
+                '@typescript-eslint/strict-void-return': 'off',
                 '@typescript-eslint/switch-exhaustiveness-check': 'warn',
                 '@typescript-eslint/triple-slash-reference': 'error',
                 '@typescript-eslint/unbound-method': [
@@ -1135,7 +1135,7 @@ export async function createConfig({
                 'react-hooks/set-state-in-render': 'error',
                 'react-hooks/static-components': 'error',
                 'react-hooks/unsupported-syntax': 'warn',
-                'react-hooks/use-memo': 'error',
+                'react-hooks/use-memo': 'off',
                 'react-hooks/incompatible-library': 'warn',
 
                 /**
