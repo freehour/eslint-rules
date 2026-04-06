@@ -3,7 +3,7 @@
     "private": false,
     "displayName": "eslint-rules",
     "description": "ESLint rules for TypeScript projects.",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "type": "module",
     "repository": {
         "type": "git",

@@ -780,6 +780,11 @@ export async function createConfig({
                 '@stylistic/operator-linebreak': [
                     'warn',
                     'before',
+                    {
+                        overrides: {
+                            '=': 'after',
+                        },
+                    }
                 ],
                 '@stylistic/padded-blocks': 'off',
                 '@stylistic/padding-line-between-statements': [
