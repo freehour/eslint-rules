@@ -506,7 +506,7 @@ export async function createConfig({
                 '@typescript-eslint/no-unnecessary-type-assertion': 'error',
                 '@typescript-eslint/no-unnecessary-type-constraint': 'error',
                 '@typescript-eslint/no-unnecessary-type-conversion': 'error',
-                '@typescript-eslint/no-unnecessary-type-parameters': 'error',
+                '@typescript-eslint/no-unnecessary-type-parameters': 'off',
                 '@typescript-eslint/no-unsafe-argument': 'off',
                 '@typescript-eslint/no-unsafe-assignment': 'off',
                 '@typescript-eslint/no-unsafe-call': 'off',
