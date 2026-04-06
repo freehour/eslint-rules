@@ -46,6 +46,7 @@ The ESLint rules are designed to be compatible with the following TypeScript com
         "noFallthroughCasesInSwitch": true,
         "noImplicitOverride": true,
         "noImplicitReturns": true,
+        "noUncheckedIndexedAccess": true
     }
 }
 ```
