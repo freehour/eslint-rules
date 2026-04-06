@@ -611,13 +611,7 @@ export async function createConfig({
                 '@stylistic/brace-style': 'warn',
                 '@stylistic/comma-dangle': [
                     'warn',
-                    {
-                        arrays: 'always-multiline',
-                        objects: 'always-multiline',
-                        imports: 'always-multiline',
-                        exports: 'always-multiline',
-                        functions: 'always-multiline',
-                    },
+                    'always-multiline',
                 ],
                 '@stylistic/comma-spacing': 'warn',
                 '@stylistic/comma-style': 'warn',
