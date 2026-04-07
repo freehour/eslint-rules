@@ -782,7 +782,7 @@ export async function createConfig({
                     'before',
                     {
                         overrides: {
-                            '=': 'after',
+                            '=': 'ignore',
                         },
                     }
                 ],
