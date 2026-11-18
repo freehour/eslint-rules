@@ -27,7 +27,7 @@ export default defineConfig({
         minify: true,
         lib: {
             entry: [
-                resolve(__dirname, './lib/index.ts'),
+                resolve(import.meta.dirname, './lib/index.ts'),
             ],
             name: pkg.name,
             formats: ['es'],

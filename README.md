@@ -37,6 +37,8 @@ export default defineConfig(
 );
 ```
 
+**Note:** Tailwind rules require Tailwind CSS 4.3.0 or higher
+
 The ESLint rules are designed to be compatible with the following TypeScript compiler options. Make sure to set them in your `tsconfig.json`:
 
 ```jsonc

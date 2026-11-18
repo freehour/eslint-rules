@@ -1,5 +1,6 @@
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
-import type { Config } from 'eslint/config';
+import type { ConfigObject } from 'eslint/config';
+import type { ESLint } from "eslint";
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import reactPlugin from 'eslint-plugin-react';
@@ -50,7 +51,7 @@ export async function createConfig({
     tailwindcss = false,
     stylistic = false,
     imports = false,
-}: ConfigOptions = {}): Promise<Config> {
+}: ConfigOptions = {}): Promise<ConfigObject> {
 
     return {
         languageOptions: {
@@ -106,7 +107,9 @@ export async function createConfig({
             },
             ...stylistic && { '@stylistic': stylisticPlugin },
             ...imports && { 'import-x': importXPlugin, 'simple-import-sort': simpleImportSortPlugin },
-            ...tailwindcss && { 'tailwindcss': tailwindcssPlugin },
+            ...tailwindcss && {
+                'tailwindcss': tailwindcssPlugin as typeof tailwindcssPlugin & ESLint.Plugin,
+            },
         },
         rules: {
             // base
@@ -114,7 +117,7 @@ export async function createConfig({
                 /**
                  * @description rules related to possible logic errors
                  * @see https://eslint.org/docs/v10.x/rules/#possible-problems
-                 * @version 10.1.0
+                 * @version 10.15.0
                  */
 
                 'array-callback-return': 'error',
@@ -164,6 +167,7 @@ export async function createConfig({
                 'no-sparse-arrays': 'error',
                 'no-template-curly-in-string': 'warn',
                 'no-this-before-super': 'error',
+                'no-unassigned-vars': 'warn',
                 'no-undef': 'error',
                 'no-unexpected-multiline': 'error',
                 'no-unmodified-loop-condition': 'error',
@@ -193,6 +197,7 @@ export async function createConfig({
                         allowNamedExports: false,
                     },
                 ],
+                'no-useless-assignment': 'warn',
                 'no-useless-backreference': 'warn',
                 'require-atomic-updates': 'warn',
                 'use-isnan': 'error',
@@ -201,8 +206,8 @@ export async function createConfig({
 
                 /**
                  * @description rules suggesting alternate ways of doing things
-                 * @see https://eslint.org/docs/v8.x/rules/#suggestions
-                 * @version 10.1.0
+                 * @see https://eslint.org/docs/v10.x/rules/#suggestions
+                 * @version 10.15.0
                  */
 
                 'accessor-pairs': 'error',
@@ -361,8 +366,8 @@ export async function createConfig({
 
                 /**
                  * @description rules that care about how the code looks rather than how it executes:
-                 * @see https://eslint.org/docs/v8.x/rules/#layout--formatting
-                 * @version 10.1.0
+                 * @see https://eslint.org/docs/v10.x/rules/#layout--formatting
+                 * @version 10.15.0
                  */
                 'unicode-bom': 'error',
             },
@@ -385,7 +390,6 @@ export async function createConfig({
                 'no-empty-function': 'off',
                 'no-implied-eval': 'off',
                 'no-invalid-this': 'off',
-                'no-loop-func': 'off',
                 'no-magic-numbers': 'off',
                 'no-redeclare': 'off',
                 'no-restricted-imports': 'off',
@@ -404,7 +408,7 @@ export async function createConfig({
                 /**
                  * @description rules from the typescript-eslint package
                  * @see https://typescript-eslint.io/rules/
-                 * @version 8.57.2
+                 * @version 8.73.0
                  */
 
                 '@typescript-eslint/adjacent-overload-signatures': 'warn',
@@ -469,12 +473,12 @@ export async function createConfig({
                 '@typescript-eslint/no-extraneous-class': 'warn',
                 '@typescript-eslint/no-floating-promises': 'error',
                 '@typescript-eslint/no-for-in-array': 'error',
+                '@typescript-eslint/no-generated-empty-object-type': 'warn',
                 '@typescript-eslint/no-implied-eval': 'error',
                 '@typescript-eslint/no-import-type-side-effects': 'warn',
                 '@typescript-eslint/no-inferrable-types': 'warn',
                 '@typescript-eslint/no-invalid-this': 'off',
                 '@typescript-eslint/no-invalid-void-type': 'warn',
-                '@typescript-eslint/no-loop-func': 'warn',
                 '@typescript-eslint/no-magic-numbers': 'off',
                 '@typescript-eslint/no-meaningless-void-operator': 'warn',
                 '@typescript-eslint/no-misused-new': 'error',
@@ -510,7 +514,9 @@ export async function createConfig({
                 '@typescript-eslint/no-unsafe-argument': 'off',
                 '@typescript-eslint/no-unsafe-assignment': 'off',
                 '@typescript-eslint/no-unsafe-call': 'off',
+                '@typescript-eslint/no-unsafe-class-instance-assignment': 'error',
                 '@typescript-eslint/no-unsafe-declaration-merging': 'error',
+                '@typescript-eslint/no-unsafe-enum-assignment': 'error',
                 '@typescript-eslint/no-unsafe-enum-comparison': 'off',
                 '@typescript-eslint/no-unsafe-function-type': 'warn',
                 '@typescript-eslint/no-unsafe-member-access': 'off',
@@ -593,15 +599,9 @@ export async function createConfig({
                 /**
                  * @description rules from the stylistic package
                  * @see https://eslint.style/rules
-                 * @version 6.0.0
+                 * @version 6.0.1
                  */
 
-                '@stylistic/array-bracket-newline': 'warn',
-                '@stylistic/array-bracket-spacing': 'warn',
-                '@stylistic/array-element-newline': [
-                    'warn',
-                    'consistent',
-                ],
                 '@stylistic/arrow-parens': [
                     'warn',
                     'as-needed',
@@ -621,15 +621,7 @@ export async function createConfig({
                     'property',
                 ],
                 '@stylistic/eol-last': 'warn',
-                '@stylistic/function-call-argument-newline': [
-                    'warn',
-                    'consistent',
-                ],
                 '@stylistic/function-call-spacing': 'warn',
-                '@stylistic/function-paren-newline': [
-                    'warn',
-                    'multiline-arguments',
-                ],
                 '@stylistic/generator-star-spacing': 'warn',
                 '@stylistic/implicit-arrow-linebreak': 'warn',
                 '@stylistic/indent': ['warn', 4],
@@ -685,6 +677,8 @@ export async function createConfig({
                 ],
                 '@stylistic/jsx-quotes': 'warn',
                 '@stylistic/jsx-self-closing-comp': 'warn',
+                '@stylistic/jsx-shorthand-boolean': 'warn',
+                '@stylistic/jsx-shorthand-fragment': 'warn',
                 '@stylistic/jsx-tag-spacing': 'warn',
                 '@stylistic/jsx-wrap-multilines': [
                     'warn',
@@ -718,7 +712,7 @@ export async function createConfig({
                         exceptAfterSingleLine: true,
                     },
                 ],
-                '@stylistic/exp-list-style': 'warn',
+                '@stylistic/list-style': 'warn',
                 '@stylistic/max-len': 'off',
                 '@stylistic/max-statements-per-line': 'warn',
                 '@stylistic/member-delimiter-style': 'warn',
@@ -760,22 +754,6 @@ export async function createConfig({
                 '@stylistic/no-trailing-spaces': 'warn',
                 '@stylistic/no-whitespace-before-property': 'warn',
                 '@stylistic/nonblock-statement-body-position': 'off',
-                '@stylistic/object-curly-newline': [
-                    'warn',
-                    {
-                        ObjectExpression: { multiline: true, consistent: true },
-                        ObjectPattern: { multiline: true, consistent: true },
-                        ImportDeclaration: { multiline: true, consistent: true },
-                        ExportDeclaration: { multiline: true, consistent: true },
-                    },
-                ],
-                '@stylistic/object-curly-spacing': ['warn', 'always'],
-                '@stylistic/object-property-newline': [
-                    'warn',
-                    {
-                        allowAllPropertiesOnSameLine: true,
-                    },
-                ],
                 '@stylistic/one-var-declaration-per-line': 'warn',
                 '@stylistic/operator-linebreak': [
                     'warn',
@@ -837,10 +815,14 @@ export async function createConfig({
 
                 /**
                  * @description Import rules
-                 * @see https://github.com/import-js/eslint-plugin-import/tree/main?tab=readme-ov-file
-                 * @version 4.16.2
+                 * @see https://github.com/un-ts/eslint-plugin-import-x
+                 * @version 4.18.1
                  */
 
+                'import-x/avoid-barrel-files': 'off',
+                'import-x/avoid-importing-barrel-files': 'off',
+                'import-x/avoid-namespace-import': 'off',
+                'import-x/avoid-re-export-all': 'off',
                 'import-x/export': 'error',
                 'import-x/no-deprecated': 'warn',
                 'import-x/no-empty-named-blocks': 'warn',
@@ -913,6 +895,7 @@ export async function createConfig({
                     /**
                      * Rules from the stylistic package that are extended by the react plugin.
                      * These rules need to be turned off.
+                     * @version 6.0.1
                      */
                     '@stylistic/jsx-child-element-spacing': 'off',
                     '@stylistic/jsx-closing-bracket-location': 'off',
@@ -922,14 +905,11 @@ export async function createConfig({
                     '@stylistic/jsx-curly-spacing': 'off',
                     '@stylistic/jsx-equals-spacing': 'off',
                     '@stylistic/jsx-first-prop-new-line': 'off',
-                    '@stylistic/jsx-indent': 'off',
                     '@stylistic/jsx-indent-props': 'off',
                     '@stylistic/jsx-max-props-per-line': 'off',
                     '@stylistic/jsx-newline': 'off',
                     '@stylistic/jsx-one-expression-per-line': 'off',
                     '@stylistic/jsx-pascal-case': 'off',
-                    '@stylistic/jsx-props-no-multi-spaces': 'off',
-                    '@stylistic/jsx-sort-props': 'off',
                     '@stylistic/jsx-tag-spacing': 'off',
                 },
 
@@ -1147,6 +1127,7 @@ export async function createConfig({
                     'warn',
                     {
                         allowConstantExport: true,
+                        allowCompoundComponents: true,
                     },
                 ],
             },
@@ -1155,12 +1136,14 @@ export async function createConfig({
                 /**
                  * @description rules for Tailwind CSS
                  * @see https://github.com/francoismassart/eslint-plugin-tailwindcss
-                 * @version 4.0.0-beata.0
+                 * @version 4.4.0
                  */
 
                 'tailwindcss/classnames-order': 'warn',
+                'tailwindcss/enforces-canonical-classname': 'warn',
                 'tailwindcss/enforces-negative-arbitrary-values': 'warn',
                 'tailwindcss/enforces-shorthand': 'warn',
+                'tailwindcss/important-modifier-suffix': 'warn',
                 'tailwindcss/migration-from-tailwind-2': 'off',
                 'tailwindcss/no-arbitrary-value': 'off',
                 'tailwindcss/no-custom-classname': 'warn',
