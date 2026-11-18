@@ -30,7 +30,7 @@ export default defineConfig(
         settings: {
             tailwindcss: {
                 // When using Tailwind CSS, make sure to specify the path to your Tailwind CSS configuration file. Must be an absolute path
-                config: '/workspaces/project/tailwind.css',
+                cssConfigPath: '/workspaces/project/tailwind.css',
             },
         }
     },

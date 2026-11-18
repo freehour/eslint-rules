@@ -862,7 +862,9 @@ export async function createConfig({
                 'import-x/extensions': [
                     'warn',
                     {
-                        json: 'always',
+                        pattern: {
+                            json: 'always',
+                        },
                         fix: true,
                     },
                 ],
@@ -1093,7 +1095,7 @@ export async function createConfig({
                 /**
                  * @description: enforce the Rules of Hooks
                  * @see https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks
-                 * @version 7.0.1
+                 * @version 7.1.1
                  */
 
                 // Core hooks rules
@@ -1120,7 +1122,7 @@ export async function createConfig({
                 /**
                  * @description: rules that validate that your components can safely be updated with fast refresh.
                  * @see https://github.com/ArnaudBarre/eslint-plugin-react-refresh
-                 * @version 0.5.2
+                 * @version 0.5.8
                  */
 
                 'react-refresh/only-export-components': [
@@ -1154,7 +1156,7 @@ export async function createConfig({
                 /**
                  * @description: eslint stylistic rules
                  * @see https://github.com/lydell/eslint-plugin-simple-import-sort/
-                 * @version 12.1.1
+                 * @version 14.0.0
                  */
 
                 'simple-import-sort/imports': [
